@@ -21,12 +21,15 @@ export default function Home() {
                     </BackgroundSectionTitle>
                 </div>
 
-                <div style={{marginBottom:"50rem"}}>
-                    <BackgroundSectionDescription />
+                <div style={{ marginBottom: "50rem" }}>
+                    <BackgroundSectionDescription>
+                        <p className="subtitle">We conceptualize your website</p>
+                        <p className="subtitle">as a digital connection to your clients</p>
+                    </BackgroundSectionDescription>
                 </div>
                 <div>
                     <BackgroundSectionBody>
-                        <p className="subtitle">How we work</p>
+                        <p className="subtitle" style={{ marginBottom: "20px" }}>How we work</p>
                         <p className="text-body">Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet.</p>
                     </BackgroundSectionBody>
                 </div>
