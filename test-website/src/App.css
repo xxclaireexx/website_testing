@@ -1,0 +1,107 @@
+/* .App {
+  text-align: center;
+}
+
+.App-logo {
+  height: 40vmin;
+  pointer-events: none;
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  .App-logo {
+    animation: App-logo-spin infinite 20s linear;
+  }
+}
+
+.App-header {
+  background-color: #282c34;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-size: calc(10px + 2vmin);
+  color: white;
+}
+
+.App-link {
+  color: #61dafb;
+}
+
+@keyframes App-logo-spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+} */
+
+
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;700&display=swap');
+
+/* write in center */
+
+.center {
+  text-align: center;
+}
+
+/* Title */
+
+.title {
+  font-size: 6.5rem;
+  font-family: "Comic Neue";
+  font-weight: 100;
+  letter-spacing: 1px;
+  display: flex;
+  flex-direction: column;
+  padding-right: 5rem;
+  padding-left: 5rem;
+}
+
+/* subtitles */
+
+.subtitle {
+  font-size: 3.5rem;
+  font-weight: 100;
+  padding-right: 5rem;
+  padding-left: 5rem;
+  font-family: Georgia, Times, 'Times New Roman', serif;
+  
+}
+
+/* default text */
+
+.text-body {
+  font-size: 2.25rem;
+  /* font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif; */
+}
+
+/* Background */
+
+.background-section-title {
+  background-color: #a39292;
+  padding: 40px;
+  width: 100%;
+  min-height: 200px;
+}
+
+.background-section-description {
+  background-color: rgba(243, 217, 217, 0.8);
+  padding: 10rem;
+  width: 100%;
+  min-height: 50rem;
+}
+
+.background-section-body {
+  background-color: rgba(226, 214, 214, 0.8);
+}
+
+.background-section-placeholder {
+  background-color: rgba(255, 255, 255, 0);
+  padding: 10rem;
+  width: 100%;
+  min-height: 20rem;
+}
+
+
