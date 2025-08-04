@@ -15,5 +15,8 @@
     "spa"
   ],
   "author": "Claire",
-  "license": "ISC"
+  "license": "ISC",
+  "dependencies": {
+    "framer-motion": "^12.23.12"
+  }
 }
