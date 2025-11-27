@@ -2,29 +2,26 @@
 This file gives concise, project-specific guidance for AI coding agents working in this repository. Focus on the two Create-React-App projects and the minimal conventions shown in the source.
 
 **Project Overview**
-- **Two CRA apps:** `meine-webseite` (JavaScript) and `test-website` (TypeScript). Each is a standalone CRA app with its own `package.json` and `src/` folder.
-- **Entrypoints:** `meine-webseite/src/index.js` and `test-website/src/index.tsx` create the React root.
-- **UI components:** Small, locally-scoped components live in `src/` (examples: `Text.js`, `home.tsx`, `background.tsx`). Styling is via `App.css` + some inline styles.
+- **Primary CRA app:** `test-website` (TypeScript). It is a standalone Create-React-App with its own `package.json` and `src/` folder.
+- **Entrypoint:** `test-website/src/index.tsx` creates the React root.
+- **UI components:** Small, locally-scoped components live in `src/` (examples: `home.tsx`, `background.tsx`, `questionform.tsx`). Styling is via `App.css` + some inline styles.
 
 **How to run & build (explicit)**
 - Install and run either app from its folder. Use PowerShell on developer machines (commands joined with `;`).
 
 ```powershell
-cd .\meine-webseite; npm install; npm start
 cd .\test-website; npm install; npm start
 ```
 
 - Build for production:
 
 ```powershell
-cd .\meine-webseite; npm run build
 cd .\test-website; npm run build
 ```
 
 - Tests use CRA's test runner:
 
 ```powershell
-cd .\meine-webseite; npm test
 cd .\test-website; npm test
 ```
 
@@ -33,12 +30,11 @@ Note: the repository root `package.json` contains a placeholder `test` script (e
 **Important patterns & examples (do not invent conventions)**
 - `test-website/src/background.tsx` exports layout primitives used by pages: `BackgroundSectionTitle`, `BackgroundSectionBody`, `BackgroundSectionDescription`, `BackgroundSectionPlaceholder`. Use these for consistent section wrappers.
 - `test-website/src/home.tsx` composes the sections and uses inline `backgroundImage` style for hero background — prefer editing this file for hero changes.
-- `meine-webseite/src/Text.js` is a small presentational component; `meine-webseite/src/App.js` simply renders `<Text />`.
 - CSS lives in `src/App.css` and `src/index.css`; components often use class names like `title`, `subtitle`, `text-body` and utility inline styles.
 
 **TypeScript vs JavaScript**
 - `test-website` is TypeScript-based (has `tsconfig.json`, `react-app-env.d.ts`) and includes `@types/*` dependencies. Keep type correctness when editing here.
-- `meine-webseite` is plain JavaScript (React). Do not mix TypeScript syntax into this project.
+- Historically there was also a JavaScript CRA app; the active project in this repository is `test-website` (TypeScript). Keep TypeScript types intact when editing `test-website`.
 
 **Known issues to be cautious about (discovered by static scan)**
 - `test-website/src/App.tsx` contains invalid code that prevents the app from compiling as-is. Example problems:
@@ -62,9 +58,9 @@ export default App;
 - Root `package.json` lists `framer-motion` but subprojects do not reference it; verify if a central dependency was intended before adding imports.
 
 **Where to look when changing behavior**
-- UI/layout changes: `**/src/*.{js,jsx,ts,tsx}`, specifically: `test-website/src/home.tsx`, `test-website/src/background.tsx`, `meine-webseite/src/Text.js`.
-- App entry and bootstrapping: `**/src/index.*`.
-- Static HTML template: `**/public/index.html`.
+- UI/layout changes: `**/src/*.{js,jsx,ts,tsx}`, specifically: `test-website/src/home.tsx`, `test-website/src/background.tsx`, `test-website/src/questionform.tsx`.
+- App entry and bootstrapping: `test-website/src/index.tsx`.
+- Static HTML template: `test-website/public/index.html`.
 
 **Search helpers for agents**
 - Find components: `git grep -n "export default" -- **/src` or glob `**/src/**/*.{js,jsx,ts,tsx}`.
