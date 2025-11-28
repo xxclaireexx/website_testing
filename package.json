@@ -17,6 +17,7 @@
   "author": "Claire",
   "license": "ISC",
   "dependencies": {
+    "cors": "^2.8.5",
     "framer-motion": "^12.23.12"
   }
 }
