@@ -28,7 +28,7 @@ const QuestionForm: React.FC<QuestionFormProps> = ({ onSubmit }) => {
                 throw new Error(err?.error || 'Fehler beim Senden');
             }
             const data = await res.json();
-            setMessage('Frage erfolgreich gesendet. Danke!');
+            setMessage('Message has been sent successfully!');
             onSubmit?.(question);
             setQuestion('');
             setName('');

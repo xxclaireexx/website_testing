@@ -62,6 +62,8 @@
 /* subtitles */
 
 .subtitle {
+  display: flex;
+  flex-direction: column;
   font-size: 2.5rem;
   font-weight: 100;
   padding-right: 5rem;
@@ -81,27 +83,35 @@
 
 .background-section-title {
   background-color: #a39292;
-  padding: 40px;
+  /* padding: 1rem; */
   width: 100%;
-  min-height: 200px;
+  min-height: 25rem;
 }
 
 .background-section-description {
   background-color: rgba(243, 217, 217, 0.8);
-  padding: 10rem;
+  /* padding: 10rem; */
   width: 100%;
-  min-height: 20rem;
+  min-height: 25rem;
 }
 
 .background-section-body {
   background-color: rgba(226, 214, 214, 1);
+  min-height: 25rem;
 }
 
 .background-section-placeholder {
   background-color: rgba(255, 255, 255, 0);
   padding: 10rem;
   width: 100%;
-  min-height: 20rem;
+  min-height: 5rem;
+}
+
+/* Distance from other elements */
+
+.section-spacing {
+  margin-top: 20rem;
+  margin-bottom: 20rem;
 }
 
 /* Distance from screen edges */

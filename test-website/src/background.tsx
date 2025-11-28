@@ -1,9 +1,11 @@
 import "./App.css"; // oder eine separate CSS-Datei, wenn du magst
 import React from "react";
 
-type Props = {
+
+type Props = React.HTMLAttributes<HTMLElement> & {
   children?: React.ReactNode;
 };
+
 
 // standard background for title/subtitle section
 export const BackgroundSectionTitle: React.FC<Props> = ({ children }) => {

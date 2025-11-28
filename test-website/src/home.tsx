@@ -15,21 +15,21 @@ export default function Home() {
                     backgroundAttachment: "fixed",
                 }}>
                 <div>
-                    <BackgroundSectionTitle>
+                    <BackgroundSectionTitle className ="section-spacing">
                         <p className="title center" style={{ marginBottom: "20px", marginTop:"10px" }}>Want to get a potential client to know your product?</p>
                         <p className="subtitle center" style={{}}>Get an individual design for your website</p>
-                        <p style={{ fontSize: "3rem", fontFamily: "karla", textAlign: "right", paddingRight: "7.5rem", fontWeight: "500" }}>Contact: 1234512345</p>
+                        <p style={{ fontSize: "2rem", fontFamily: "karla", textAlign: "right", paddingRight: "3.5rem", fontWeight: "500" }}>Contact: 1234512345</p>
                     </BackgroundSectionTitle>
                 </div>
 
-                <div style={{ marginBottom: "30rem" }}>
-                    <BackgroundSectionDescription>
+                <div style={{ marginBottom: "10rem" }}>
+                    <BackgroundSectionDescription className ="section-spacing">
                         <p className="subtitle">We conceptualize your website</p>
                         <p className="subtitle">as a digital connection to your clients</p>
                     </BackgroundSectionDescription>
                 </div>
                 <div>
-                    <BackgroundSectionBody>
+                    <BackgroundSectionBody className ="section-spacing">
                         <p className="subtitle" style={{ marginBottom: "20px" }}>How we work</p>
                         <p className="text-body">Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet.</p>
                     </BackgroundSectionBody>
@@ -40,9 +40,9 @@ export default function Home() {
                 </div>
                 
                 <div>
-                    <BackgroundSectionBody>
+                    <BackgroundSectionBody className ="section-spacing">
                         {/* Placeholder, has yet to be replaced */}
-                        <p className="text-body">Question form</p>
+                        <p className="subtitle center">Question form</p>
                         <QuestionForm onSubmit={(question) => {
                             alert(`Your question was submitted: ${question}`);
                         }

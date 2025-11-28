@@ -30,8 +30,13 @@ def init_db():
 app = Flask(__name__)
 CORS(app)
 
-@app.before_first_request
-def init():
+from flask import Flask
+
+app = Flask(__name__)
+
+
+# initalisize the database (once)
+with app.app_context():
     init_db()
 
 @app.route('/api/questions', methods=['POST'])
